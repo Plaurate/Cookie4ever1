@@ -1,0 +1,24 @@
+*{
+text-align: center;
+margin-left:  50px;
+margin-right: 50px;
+
+}
+Body{
+    background-color:lightslategray;
+    
+}
+.Attels{
+    position: relative;
+
+    
+}
+.text1{
+    
+}
+.text2{
+color: white;
+position: absolute;
+top: 50%;
+    
+}
