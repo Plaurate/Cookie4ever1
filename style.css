@@ -1,0 +1,39 @@
+.navigator{
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+.logo{
+    float:left;
+}
+.option{
+    float:right;
+    color:#AF9E93;
+    text-align: center;
+    padding:14px 16px;
+}
+.option:hover, .option:focus{
+    background-color: #e7cbbd;
+    color:#4b3a2e;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdownOptions{
+    display:none;
+    position:absolute;
+    background-color:#F8F8F8;
+    color:#AF9E93
+}
+.dropdownOptions a{
+    padding:12px 16px;
+    display:block;
+}
+
+.navigation{
+    display:inline;
+    width: 60px;
+}
