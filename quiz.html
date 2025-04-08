@@ -3,12 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CookieQuiz</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CookieHistory</title>
+    <link rel="stylesheet" href="style.quiz.css">
 </head>
 <body>
+    <h2>Quiz Time!</h2>     
+    <div class="result" id="result"></div> <!--Atbildes izvedne tas 5/5-->
+
+    
+      <div class="question">
+        <p>1. What is the other name for cookies in the English language?</p>
+        <div class="atbilde">
+          <label><input type="radio" name="q1" value="a"> Snackwafters</label><br>
+          <label><input type="radio" name="q1" value="b"> Crumblets</label><br>
+          <label><input type="radio" name="q1" value="c"> Biscuit</label><br>
+          <label><input type="radio" name="q1" value="d"> Bitecakes</label>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p>2. Which year was the original game “Cookie clicker” created?</p>
+        <div class="atbilde">
+          <label><input type="radio" name="q2" value="a"> 2013</label><br>
+          <label><input type="radio" name="q2" value="b"> 2007</label><br>
+          <label><input type="radio" name="q2" value="c"> 2009</label><br>
+          <label><input type="radio" name="q2" value="d"> 2011</label>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p>3. How much time did it take to create the original version of “Cookie clicker”?</p>
+        <div class="atbilde">
+          <label><input type="radio" name="q3" value="a"> 1 Month</label><br>
+          <label><input type="radio" name="q3" value="b"> 1 Week</label><br>
+          <label><input type="radio" name="q3" value="c"> 1 Day</label><br>
+          <label><input type="radio" name="q3" value="d"> 1 Night</label>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p>4. Which are the basic ingredients for cookies?</p>
+        <div class="atbilde">
+          <label><input type="radio" name="q4" value="a"> Flour, Sugar, Egg</label><br>
+          <label><input type="radio" name="q4" value="b"> Motor oil and Cactus needles</label><br>
+          <label><input type="radio" name="q4" value="c"> Sand dust and Toothpaste foam</label><br>
+          <label><input type="radio" name="q4" value="d"> Shredded rubber bands</label>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p>5. Which type of cookie did Elizabeth I present to her important guests?</p>
+        <div class="atbilde">
+          <label><input type="radio" name="q5" value="a"> Quantum Chip Crunchers</label><br>
+          <label><input type="radio" name="q5" value="b"> Gingerbread cookies</label><br>
+          <label><input type="radio" name="q5" value="c"> Unicorn Sprinkle Delights</label><br>
+          <label><input type="radio" name="q5" value="d"> Bluetooth Biscotti</label>
+        </div>
+      </div>
+  
+      <button type="button" onclick="checkAtbilde()">Submit</button>
+    </form>
+
+    
     
 
-    <script src="scirpt.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
