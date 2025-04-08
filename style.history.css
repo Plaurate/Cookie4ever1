@@ -2,10 +2,11 @@
 text-align: center;
 margin-left:  50px;
 margin-right: 50px;
+font-size: xx-large;
 
 }
 Body{
-    background-color:lightslategray;
+    background-color:#F4F4F4;
     
 }
 .Attels{
@@ -13,12 +14,13 @@ Body{
 
     
 }
-.text1{
-    
-}
+
 .text2{
 color: white;
 position: absolute;
 top: 50%;
     
+}
+img{
+    opacity: 0.3;
 }
