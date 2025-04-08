@@ -1,16 +1,20 @@
-function NavigatorDrop() {
-    document.getElementById("gameDropdown").classList.toggle("show");
-}
+function checkAtbilde() {
+    const atbilde = {
+      q1: 'c',
+      q2: 'a',
+      q3: 'd',
+      q4: 'a',
+      q5: 'b'
+    };
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      let dropdowns = document.getElementsByClassName("dropdownOptions");
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+    let score = 0;
+    for (let q in atbilde) {
+      const izvēle = document.querySelector(`input[name="${q}"]:checked`);
+      if (izvēle && izvēle.value === atbilde[q]) {
+        score++;
       }
     }
+
+    document.getElementById('result').textContent = `You got ${score} out of 5 correct!`;
+
   }
