@@ -1,66 +1,39 @@
 *{
-    margin:0;
+    font-family: "Viga";
 }
+body {
+    background-color: #f4f4f4;
 
-body{
-    background-color: #F4F4F4;
-    height:100%;
-}
-
-.navigator{
-    height:auto;
-    background-color: #8b7f7f;
-}
-
-.logo{
-    width:auto;
-    padding:10px 35px 10px 35px;
-    float:left;
-    font-family: 'Viga';
-    color:#4b3a2e;
-    font-size:20px;
-}
-.option{
-    font-family: 'Viga';
-    float:right;
-    color:#AF9E93;
-    font-size:20px;
-    text-align: center;
-    padding:10px 35px 10px 35px;
-    border:none;
-
-}
-.option:hover, .option:focus{
-    background-color: #e7cbbd;
-    color:#4b3a2e;
-}
-
-.dropdown {
-    position: relative;
-    float:right;
+    max-width: 600px;
+    margin: 10px auto;
   }
+  h2 {
+    color: #333;
+    font-size: xx-large;
 
-.dropdownOptions{
-    display:none;
-    position:absolute;
-    background-color:#ffffff;
-    color:#AF9E93;
-    z-index: 1;
-    min-width: 100%;
-    top:100%;
-}
-.dropdownOptions a{
-    color:#AF9E93;
-    padding:12px 16px;
-    display:block;
-    text-decoration: none;
-}
+  }
+  .question {
+    margin-bottom: 15px;
+    font-size:large;
+    
+  }
+  .atbilde {
+    margin-left: 20px;
+    border-style: solid;
+    border-radius: 16px;
+    padding: 10px;
 
-.navigation{
-    display:inline;
-    width: 60px;
-}
+  }
+  .result /*Jautājumu skaits tas 5/5*/{ 
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  button {
+    padding: 10px 10px;
+    font-size:large;
+    cursor: pointer;
+  }
+  p{
+    font-weight: bold;
 
-.dropdownOptions a:hover {background-color: #ffffff; color:#4b3a2e}
-
-.show {display:block;}
+  }
