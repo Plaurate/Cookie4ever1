@@ -9,7 +9,7 @@ function checkAtbilde() {
 
     let score = 0;
     for (let q in atbilde) {
-      const izvēle = document.querySelector(`input[name="${q}"]:checked`);
+      const izvēle = document.querySelector(`input[name="${q}"]:checked`);// Šito līniju vajag papētīt, es kinda 100% nesaprotu tbh
       if (izvēle && izvēle.value === atbilde[q]) {
         score++;
       }
