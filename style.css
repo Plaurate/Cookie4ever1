@@ -83,3 +83,24 @@ img{
     border:none;
     text-decoration-line:none;
 }
+  .question {
+    margin-bottom: 15px;
+    font-size:large;
+    
+  }
+  .atbilde {
+    margin-left: 20px;
+    border-style: solid;
+    border-radius: 16px;
+    padding: 10px;
+
+  }
+  .result /*Jautājumu skaits tas 5/5*/{ 
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  button {
+    padding: 10px 10px;
+    font-size:large;
+    cursor: pointer;
+  }
