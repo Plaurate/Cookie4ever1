@@ -104,3 +104,20 @@ img{
     font-size:large;
     cursor: pointer;
   }
+
+.poga1{
+    border: none;
+    background-color: #F4F4F4;
+}
+.CookieClick{
+    height: 300px;
+    position: static;
+    margin-right:auto;
+
+}
+.Score{
+    border-style:solid;
+    border-radius: 16px; 
+    margin-left: 30%;
+    margin-right: 30%;
+}
