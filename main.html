@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie4ever1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul class="navigator">
-        <p class="logo navigation">Cookie4ever1</p>
-        <li class="navigation">
+    <div class="navigator">
+        <p class="logo">Cookie4ever1</p>
+        
+        <div class="right">
 
-            <div class="option dropdown">
-                <button onclick="NavigatorDrop()" class="option">Games</button>
-                <div id="gameDropdown" class="dropdownOptions">
+            <a class="current" href="./main.html">Home</a>
+
+            <a class="option" href="./history.html"> History  </a>
+    
+            <div class="dropdown">
+                <button class="option">Games</button>
+                <div class="dropContent">
                     <a href="./CookieClicker.html">Cookie Clicker</a>
-                    <a href="./quiz.html">Cookie Quiz</a>
+                    <a href="./quiz.html">Quiz</a>
                 </div>
             </div>
 
-
-        <li class="navigation"><a class="option historypage" href="./history.html"> History  </a></li>
-    </ul>
+        </div>
+    </div>
 
 
 
