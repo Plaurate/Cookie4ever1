@@ -9,6 +9,7 @@ function checkAtbilde() {
 
     let score = 0;
     for (let q in atbilde) {
+      // Atrod izvēlēto radio pogu ar name atribūtu, kas atbilst mainīgajam q.
       const izvēle = document.querySelector(`input[name="${q}"]:checked`);
       if (izvēle && izvēle.value === atbilde[q]) {
         score++;
@@ -51,9 +52,9 @@ function restart() {
     rezultati.push(rezultats);
     HighScore()
     rezultats = 0;
-    cps = 0;
-    cursors = 0;
-    grandmas = 0;
+    cps = 0
+    cursors = 0
+    grandmas = 0
     farms = 0;
     cursorCost = 100;
     grandmaCost = 200;
@@ -101,6 +102,7 @@ setInterval(() => {rezultats += cps;
   update();
 }, 1000);
 
+//.sort šķiro array/list 
 function HighScore() {
 rezultati.sort((a, b) => b - a);
 for (let i = 0; i < Math.min(5, rezultati.length);i++){ 
@@ -135,4 +137,4 @@ for (i = 0; i < rec.length; i++) {
       recipe.style.display = "block";
     }
   });
-}
+} 
