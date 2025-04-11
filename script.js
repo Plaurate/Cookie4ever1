@@ -19,7 +19,7 @@ function checkAtbilde() {
 
   }
 
-let rezultats = 1000;
+let rezultats = 0;
 let rezultati = [];
 
 let cps = 0;
@@ -32,7 +32,7 @@ let grandmaCost = 200;
 let farmCost = 500;
 
 function update() {
-  document.getElementById("rezultats").innerHTML = `Score : ${rezultats}`;
+  document.getElementById("rezultats").innerHTML = `Cookies : ${rezultats}`;
   document.getElementById("cps").innerHTML = `CPS : ${cps}`;
   document.getElementById("counts").innerHTML = `Cursors: ${cursors}   | ` + `Grandmas: ${grandmas}| ` + `Farms: ${farms}`;
   document.getElementById("Cursor").innerHTML =`Cursor - (${cursorCost})` 
@@ -61,7 +61,7 @@ function restart() {
     update();
     console.log(rezultati);
   } else {
-    alert("YOU HAVE 0 POINTS WHY DO YOU WANT TO RESTART???");
+    alert("Why are you restarting if you have 0 points??");
   }
 }
 
@@ -106,6 +106,33 @@ rezultati.sort((a, b) => b - a);
 for (let i = 0; i < Math.min(5, rezultati.length);i++){ 
 let x = `${i+1}.Vieta`
 console.log(x)
-document.getElementById(x).innerHTML = rezultati[i]
+document.getElementById(x).innerHTML = `${rezultati[i]} cookies`
 }
+}
+
+
+// padStart aizpilda tukšās vietas string ar citu vērtību. piem. padStart(2, "0") nozīmē, ka ja ir mazāk par 2 vērtībām, strings tiks aizpildīts ar 0
+function User() {
+  const name = document.getElementById("name").value;
+  const date = new Date();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  document.getElementById("date").innerHTML =
+    `Hello, ${name}! Today's date is ${date.getDate()}.${month}.${date.getFullYear()}.`;
+}
+
+let rec = document.getElementsByClassName("recipes");
+let i;
+
+
+//this.nextElementSibling => atgriež elementu kas ir tieši aiz norādītā elementa vecāka
+for (i = 0; i < rec.length; i++) {
+  rec[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let recipe = this.nextElementSibling;
+    if (recipe.style.display === "block") {
+      recipe.style.display = "none";
+    } else {
+      recipe.style.display = "block";
+    }
+  });
 }
